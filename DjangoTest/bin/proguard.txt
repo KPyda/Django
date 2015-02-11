@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:8
+-keep class eltharis.wsn.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class eltharis.wsn.showAllActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class eltharis.wsn.showIDActivity { <init>(...); }
+

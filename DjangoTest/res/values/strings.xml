@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DjangoTest</string>
+    <string name="showall_activity">Pokaż wszystkich</string>
+    <string name="showid_activity">Pokaż konkretnego użytkownika</string>
+    
+    <string name="hello">Cześć, wybierz jedną z poniższych opcji.</string>
+    <string name="showall">Pokaż wszystkich</string>
+    <string name="showid">Pokaż konkretnego</string>
+</resources>
