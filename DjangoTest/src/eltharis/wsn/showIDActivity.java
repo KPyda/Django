@@ -24,7 +24,7 @@ public class showIDActivity extends Activity {
 
     private String executeGET(int id) throws Exception{
         HttpClient httpclient = new DefaultHttpClient(); //tutaj jest podobnie jak w showAllActivity
-        HttpResponse response = httpclient.execute(new HttpGet("http://10.0.2.2:8000/usershow/" + Integer.toString(id)));
+        HttpResponse response = httpclient.execute(new HttpGet("https://agile-depths-5530.herokuapp.com/usershow/" + Integer.toString(id)));
         StatusLine statusline = response.getStatusLine();
         Toast toast = Toast.makeText(getApplicationContext(), "HTTP Response: " + Integer.toString(statusline.getStatusCode()), Toast.LENGTH_LONG);
         toast.show();

@@ -9,5 +9,6 @@
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$attr.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$drawable.class \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/classes/User.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$string.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/MainActivity.class \

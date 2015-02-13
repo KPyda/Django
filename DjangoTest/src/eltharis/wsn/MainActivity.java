@@ -16,10 +16,15 @@ public class MainActivity extends Activity
     }
     
     public void showid_function(){
-        Intent intent = new Intent(this, showIDActivity.class); //tworzymy intent
-        int id_field = Integer.parseInt((((EditText)findViewById(R.id.tf)).getText()).toString()); //pobieramy ID do wyświetlenia
-        intent.putExtra("id", id_field); //dodajemy jako Extra do intentu. Są to tak jakby parametry
-        this.startActivity(intent); //zaczynamy intent
+        try{
+            Intent intent = new Intent(this, showIDActivity.class); //tworzymy intent
+            int id_field = Integer.parseInt((((EditText)findViewById(R.id.tf)).getText()).toString()); //pobieramy ID do wyświetlenia
+            intent.putExtra("id", id_field); //dodajemy jako Extra do intentu. Są to tak jakby parametry
+            this.startActivity(intent); //zaczynamy intent
+        }catch(Exception e){
+            Toast toast = Toast.makeText(getApplicationContext(), "Błędne dane", Toast.LENGTH_SHORT);
+            toast.show();
+        }
     }
     /** Called when the activity is first created. */
     @Override

@@ -7,20 +7,19 @@ package eltharis.wsn;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.util.ArrayList;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.protocol.HTTP;
+import org.json.JSONObject;
+import eltharis.wsn.classes.User;
 
 /**
  *
@@ -30,7 +29,7 @@ public class showAllActivity extends Activity {
 
     private String executeGET() throws Exception{
         HttpClient httpclient = new DefaultHttpClient(); //Korzystamy z Apache, który jest w Android
-        HttpResponse response = httpclient.execute(new HttpGet("http://10.0.2.2:8000/usershow/")); //każemy mu wykonać GETa
+        HttpResponse response = httpclient.execute(new HttpGet("https://agile-depths-5530.herokuapp.com/usershow/")); //każemy mu wykonać GETa
         StatusLine statusline = response.getStatusLine(); //sprawdzamy status
         Toast toast = Toast.makeText(getApplicationContext(), "HTTP Response: " + Integer.toString(statusline.getStatusCode()), Toast.LENGTH_LONG);
         toast.show(); //prosty Toast z HttpStatusCode
@@ -42,8 +41,17 @@ public class showAllActivity extends Activity {
     }
     
     private void showAll(String httpResponse){
-        TextView tv = (TextView)findViewById(R.id.tv); //szukamy TextView
-        tv.setText(httpResponse); //ustawiamy jego tekst jako httpResponse
+        TextView tv = (TextView)findViewById(R.id.tv);
+        tv.setText(httpResponse);
+//        try{
+//            JSONObject json = new JSONObject(httpResponse);
+//            TableLayout tl = (TableLayout)findViewById(R.id.table);
+//            ArrayList<Button> btnlist = new ArrayList<Button>();
+//            
+//        }catch(Exception e){
+//            e.printStackTrace();
+//        }
+        
     }
     
     /**
