@@ -15,6 +15,9 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.core.Persister;
+import eltharis.wsn.classes.User;
 
 /**
  *
@@ -37,7 +40,19 @@ public class showIDActivity extends Activity {
     
     private void showId(String httpresponse){
         TextView tv = (TextView)findViewById(R.id.tv);
-        tv.setText(httpresponse);
+        Serializer ser = new Persister();
+        User u = null;
+        try{
+            u = ser.read(User.class, httpresponse);
+            tv.setText("ID: " + Integer.toString(u.getId()) + 
+                    "\nUsername: " + u.getUsername() +
+                    "\nFirst name: " + u.getFirst_name() +
+                    "\nLast name: " + u.getLast_name() +
+                    "\nLast login: " + u.getLast_login() + "\n");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+//        tv.setText(httpresponse);
     }
     
     /**

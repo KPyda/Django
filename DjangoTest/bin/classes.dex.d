@@ -1,4 +1,5 @@
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes.dex : \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/showAllActivity$2.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/showIDActivity.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$layout.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/showAllActivity.class \
@@ -9,6 +10,11 @@
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$attr.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$drawable.class \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/showAllActivity$1.class \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/showAllActivity$DownloadUsersTask.class \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/showAllActivity$DownloadUsersTast.class \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/classes/UserArray.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/classes/User.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/R$string.class \
 /home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/classes/eltharis/wsn/MainActivity.class \
+/home/eltharis/NetBeansProjects/kolos/DjangoTest/bin/dexedLibs/simple-xml-2.7.1-16d5196359d4871cf72cfeb6bce96619.jar \
